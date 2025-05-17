@@ -15,14 +15,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.09"
+        app:layout_constraintVertical_bias="0.082"
         app:srcCompat="@drawable/app_circle_logo" />
 
     <TextView
         android:id="@+id/tv_sing_in"
         android:layout_width="202dp"
         android:layout_height="51dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="12dp"
         android:fontFamily="sans-serif-black"
         android:text="@string/Sing_In"
         android:textAlignment="center"
@@ -49,7 +49,7 @@
         android:id="@+id/til_email"
         android:layout_width="331dp"
         android:layout_height="60dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="40dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_sing_in">
@@ -71,14 +71,14 @@
         android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/textInputLayout"
         app:layout_constraintTop_toBottomOf="@+id/til_email"
-        app:layout_constraintVertical_bias="0.057"
+        app:layout_constraintVertical_bias="1.0"
         tools:layout_editor_absoluteX="52dp" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout"
         android:layout_width="331dp"
         android:layout_height="60dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="36dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/til_email">
@@ -91,14 +91,32 @@
 
     <Button
         android:id="@+id/bt_sing_in"
-        android:layout_width="323dp"
+        android:layout_width="331dp"
         android:layout_height="56dp"
+        android:layout_marginTop="44dp"
         android:backgroundTint="@color/medium_blue"
         android:text="@string/Sing_In"
-        app:cornerRadius="10dp"
         android:textSize="20sp"
-        tools:layout_editor_absoluteX="43dp"
-        tools:layout_editor_absoluteY="558dp"/>
+        app:cornerRadius="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="40dp" />
+
+    <Button
+        android:id="@+id/bt_sing_in_google"
+        android:layout_width="331dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/white"
+        android:text="@string/sing_in_with_google"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:cornerRadius="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/bt_sing_in"
+        app:strokeColor="@color/black"
+        app:strokeWidth="1.5dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="40dp" />
 
     <TextView
         android:id="@+id/textView"
@@ -106,19 +124,21 @@
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-medium"
         android:text="@string/password_reminder"
-        android:textSize="18sp"
-        tools:layout_editor_absoluteX="45dp"
-        tools:layout_editor_absoluteY="653dp" />
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.857"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="484dp" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-black"
-        android:text="@string/Sing_In"
+        android:text="@string/Sing_up"
         android:textSize="20sp"
-        tools:layout_editor_absoluteX="296dp"
-        tools:layout_editor_absoluteY="650dp" />
+        tools:layout_editor_absoluteX="300dp"
+        tools:layout_editor_absoluteY="675dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

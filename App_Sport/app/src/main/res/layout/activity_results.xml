@@ -219,39 +219,39 @@
     </androidx.cardview.widget.CardView>
 
     <LinearLayout
-        android:id="@+id/menu"
-        android:layout_width="427dp"
-        android:layout_height="85dp"
+        android:id="@+id/menu_search"
+        android:layout_width="411dp"
+        android:layout_height="97dp"
         android:background="@color/banner_gray"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/menu_likes"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent">
 
         <ImageView
             android:id="@+id/iv_search"
-            android:layout_width="50dp"
-            android:layout_height="75dp"
+            android:layout_width="43dp"
+            android:layout_height="65dp"
             android:layout_marginLeft="50dp"
-            app:srcCompat="@drawable/search"
-            />
-
+            android:layout_marginTop="8dp"
+            app:srcCompat="@drawable/search" />
 
         <ImageView
             android:id="@+id/iv_likes"
-            android:layout_width="50dp"
-            android:layout_height="75dp"
+            android:layout_width="43dp"
+            android:layout_height="65dp"
             android:layout_marginLeft="90dp"
-            app:srcCompat="@drawable/like_inactive2"
-            />
+            android:layout_marginTop="8dp"
+            app:srcCompat="@drawable/like_inactive2" />
 
         <ImageView
             android:id="@+id/iv_comments"
-            android:layout_width="50dp"
-            android:layout_height="75dp"
-            android:layout_marginLeft="90dp"
-            app:srcCompat="@drawable/comentario_inactive"
-            />
+            android:layout_width="43dp"
+            android:layout_height="65dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="8dp"
+            app:srcCompat="@drawable/comentario_inactive" />
 
     </LinearLayout>
 

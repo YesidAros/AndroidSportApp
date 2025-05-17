@@ -17,5 +17,10 @@
     <string name="results">10 Results Found</string>
     <string name="price">$ Price</string>
     <string name="profile_name">Name, Surname</string>
+    <string name="sport">Sport</string>
+    <string name="country_city">Country, City</string>
+    <string name="message">Message</string>
+    <string name="call">Contact</string>
     <string name="profile_info">To edit this text, select the text box and double click. sed egestas dolor. Fusce et ex eu mauris egestas faucibus id non purus. select the text box and double click.</string>
+    <string name="sing_in_with_google">Sing in with Google</string>
 </resources>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="@string/profile_name"
+        android:fontFamily="sans-serif-black"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_detail"
+        android:layout_width="213dp"
+        android:layout_height="186dp"
+        app:srcCompat="@drawable/gente"
+        tools:layout_editor_absoluteX="99dp"
+        tools:layout_editor_absoluteY="128dp" />
+
+    <TextView
+        android:id="@+id/tv_sport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/sport"
+        android:textSize="22sp"
+        tools:layout_editor_absoluteX="52dp"
+        tools:layout_editor_absoluteY="350dp" />
+
+    <TextView
+        android:id="@+id/tv_country_city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/country_city"
+        android:textSize="22sp"
+        tools:layout_editor_absoluteX="52dp"
+        tools:layout_editor_absoluteY="380dp" />
+
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/price"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="52dp"
+        tools:layout_editor_absoluteY="410dp" />
+
+    <TextView
+        android:id="@+id/tv_info"
+        android:layout_width="324dp"
+        android:layout_height="84dp"
+        android:text="@string/profile_info"
+        tools:layout_editor_absoluteX="52dp"
+        tools:layout_editor_absoluteY="456dp" />
+
+    <ImageView
+        android:id="@+id/iv_message"
+        android:layout_width="70dp"
+        android:layout_height="62dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.108"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/comentario_inactive"
+        tools:layout_editor_absoluteY="590dp" />
+
+    <ImageView
+        android:id="@+id/iv_call"
+        android:layout_width="70dp"
+        android:layout_height="62dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.576"
+        app:layout_constraintStart_toEndOf="@+id/iv_message"
+        app:srcCompat="@drawable/phone_gray"
+        tools:layout_editor_absoluteY="590dp" />
+
+    <TextView
+        android:id="@+id/tv_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/message"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="108dp"
+        tools:layout_editor_absoluteY="615dp" />
+
+    <TextView
+        android:id="@+id/tv_call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/call"
+        android:fontFamily="sans-serif-black"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="312dp"
+        tools:layout_editor_absoluteY="615dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
