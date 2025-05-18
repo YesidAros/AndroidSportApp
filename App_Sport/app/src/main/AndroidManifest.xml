@@ -28,10 +28,8 @@
             android:exported="false" />
         <activity android:name=".Activities.ResultsActivity"
             android:exported="false" />
-        <activity android:name=".Activities.ProductDetailActivity"
+        <activity android:name=".Fragments.ProductDetailFragment"
             android:exported="false" />
-
-
     </application>
 
 </manifest>

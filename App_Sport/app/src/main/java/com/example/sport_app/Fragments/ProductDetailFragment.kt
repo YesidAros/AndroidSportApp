@@ -1,10 +1,10 @@
-package com.example.sport_app.Activities
+package com.example.sport_app.Fragments
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.sport_app.R
 
-class ProductDetailActivity : AppCompatActivity() {
+class ProductDetailFragment : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_product_detail)
