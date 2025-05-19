@@ -56,7 +56,6 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
-                        android:gravity="space_between"
                         android:layout_marginBottom="0dp">
 
                         <TextView
@@ -82,7 +81,6 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
-                        android:gravity="space_between"
                         android:layout_marginBottom="2dp">
 
                         <TextView
@@ -102,7 +100,7 @@
                         android:layout_height="wrap_content"
                         android:text="@string/profile_info"
                         android:textColor="@color/dark_gray"
-                        android:textSize="13sp"
+                        android:textSize="12sp"
                         android:textAlignment="textStart" />
                 </LinearLayout>
             </LinearLayout>

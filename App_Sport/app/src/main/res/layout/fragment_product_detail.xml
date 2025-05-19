@@ -5,16 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/tv_info2"
-        android:layout_width="324dp"
-        android:layout_height="84dp"
-        android:text="@string/profile_info"
-        tools:layout_editor_absoluteX="52dp"
-        tools:layout_editor_absoluteY="557dp" />
 
     <TextView
-        android:id="@+id/tv_name"
+        android:id="@+id/tv_service_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
@@ -28,7 +21,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/iv_detail"
+        android:id="@+id/iv_picture_service"
         android:layout_width="213dp"
         android:layout_height="186dp"
         app:srcCompat="@drawable/profile_picture"
@@ -71,6 +64,14 @@
         android:text="@string/profile_info"
         tools:layout_editor_absoluteX="52dp"
         tools:layout_editor_absoluteY="456dp" />
+
+    <TextView
+        android:id="@+id/tv_info2"
+        android:layout_width="324dp"
+        android:layout_height="84dp"
+        android:text="@string/profile_info"
+        tools:layout_editor_absoluteX="52dp"
+        tools:layout_editor_absoluteY="557dp" />
 
     <ImageView
         android:id="@+id/iv_message"
