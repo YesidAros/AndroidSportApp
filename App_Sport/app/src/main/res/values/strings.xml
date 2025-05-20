@@ -27,4 +27,12 @@
     <string name="search">Search</string>
     <string name="likes">Likes</string>
     <string name="sport_app_search">Sport App Search</string>
+    <string name="location_1">Location_1</string>
+    <string name="location_2">location_2</string>
+    <string name="location_3">location_3</string>
+    <string name="bogot">Bogota</string>
+    <string name="medellin">Medellin</string>
+    <string name="barranquilla">Barranquilla</string>
+    <string name="locations">Locations</string>
+    <string name="tunja">Tunja</string>
 </resources>

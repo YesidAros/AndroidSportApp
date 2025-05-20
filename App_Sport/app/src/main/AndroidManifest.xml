@@ -15,9 +15,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Sport_App"
         tools:targetApi="31">
+        <activity android:name=".Activities.MapActivity"
+            android:exported="false"/>
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
             android:value="ca-app-pub-5394926491466888~6436490764"/>
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBdyItSj-lU5W-3h2ocMfSrof233BINbKQ"/>
         <activity
             android:name=".Activities.SplashActivity"
             android:exported="true">
