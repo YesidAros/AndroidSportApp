@@ -1,15 +1,16 @@
+package com.example.sport_app.Adapters
+
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.sport_app.DataBase.Product
 import com.example.sport_app.R
-import com.example.sport_app.Fragments.Product
 
-
-class ProductAdapterActivity(private val productList: List<Product>) :
-    RecyclerView.Adapter<ProductAdapterActivity.ProductViewHolder>() {
+class ProductAdapter(private val productList: List<Product>) :
+    RecyclerView.Adapter<ProductAdapter.ProductViewHolder>() {
 
     inner class ProductViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val ivProfile = itemView.findViewById<ImageView>(R.id.iv_service_Profile_picture)
@@ -21,7 +22,7 @@ class ProductAdapterActivity(private val productList: List<Product>) :
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ProductViewHolder {
         val view = LayoutInflater.from(parent.context)
-            .inflate(R.layout.product_item, parent, false)
+            .inflate(R.layout.fragment_product_item, parent, false)
         return ProductViewHolder(view)
     }
 

@@ -46,14 +46,14 @@ class LoginActivity : AppCompatActivity() {
         btn_google = findViewById(R.id.bt_google)
         btn_google.setOnClickListener {
             signIn()
-            val intent = Intent(this, ResultsFragmentActivity::class.java)
+            val intent = Intent(this, ResultsActivity::class.java)
             startActivity(intent)
         }
 
         //Sign In Button
         btnSignIn = findViewById(R.id.bt_sing_in)
         btnSignIn.setOnClickListener {
-            val intent = Intent(this, ResultsFragmentActivity::class.java)
+            val intent = Intent(this, ResultsActivity::class.java)
             startActivity(intent)
         }
 
@@ -67,7 +67,7 @@ class LoginActivity : AppCompatActivity() {
 
                 Toast.makeText(this, "Trying to log in", Toast.LENGTH_SHORT).show()
 
-                val intent = Intent(this, ResultsFragmentActivity::class.java)
+                val intent = Intent(this, ResultsActivity::class.java)
                 intent.putExtra("email", email)
                 intent.putExtra("name", email)
                 intent.putExtra("startDestination", "search")

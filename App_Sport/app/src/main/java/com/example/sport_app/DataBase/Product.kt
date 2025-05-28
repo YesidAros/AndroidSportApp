@@ -1,6 +1,5 @@
-package com.example.sport_app.Fragments
+package com.example.sport_app.DataBase
 
-import android.os.Parcel
 import android.os.Parcelable
 import kotlinx.parcelize.Parcelize
 

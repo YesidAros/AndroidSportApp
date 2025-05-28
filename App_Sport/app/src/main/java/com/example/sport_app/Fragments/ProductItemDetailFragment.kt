@@ -6,20 +6,18 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
-import androidx.appcompat.app.AppCompatActivity
-import androidx.appcompat.app.AppCompatViewInflater
 import androidx.fragment.app.Fragment
 import com.example.sport_app.R
-import com.example.sport_app.Fragments.Product
+import com.example.sport_app.DataBase.Product
 
-class ProductDetailFragment : Fragment() {
+class ProductItemDetailFragment : Fragment() {
 
     private lateinit var product: Product
 
     companion object {
         private const val ARG_PRODUCT = "product"
-        fun newInstance(product: Product): ProductDetailFragment {
-            val fragment = ProductDetailFragment()
+        fun newInstance(product: Product): ProductItemDetailFragment {
+            val fragment = ProductItemDetailFragment()
             val args = Bundle()
             args.putParcelable(ARG_PRODUCT, product)
             fragment.arguments = args
@@ -48,7 +46,7 @@ class ProductDetailFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val view = inflater.inflate(R.layout.fragment_product_detail, container, false)
+        val view = inflater.inflate(R.layout.fragment_product_item_detail, container, false)
 
         val productImageView = view.findViewById<ImageView>(R.id.iv_picture_service)
         val productNameTextView = view.findViewById<TextView>(R.id.tv_service_name)
