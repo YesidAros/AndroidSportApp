@@ -26,14 +26,14 @@
                 android:id="@+id/iv_search"
                 android:layout_width="35dp"
                 android:layout_height="35dp"
-                android:src="@drawable/search_inactive" />
+                android:src="@drawable/search_active" />
 
             <TextView
                 android:id="@+id/tv_search_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/search"
-                android:textColor="@color/dark_gray"
+                android:textColor="@color/white"
                 android:textSize="14sp" />
         </LinearLayout>
 

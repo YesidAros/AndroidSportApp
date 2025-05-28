@@ -116,16 +116,16 @@
         android:id="@+id/btn_locations"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="636dp"
+        android:layout_marginBottom="16dp"
         android:backgroundTint="@color/medium_blue"
         android:text="@string/locations"
         android:textSize="20sp"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/fragment_menu"
         tools:layout_editor_absoluteX="0dp" />
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/fragment_menu"
-        android:name="com.example.sport_app.Fragments.MenuFragment"
+        android:name="com.example.sport_app.Fragments.MenuBarFragment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent" />
