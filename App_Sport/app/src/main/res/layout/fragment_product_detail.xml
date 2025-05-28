@@ -5,18 +5,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-
     <TextView
         android:id="@+id/tv_service_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
-        android:text="@string/profile_name"
         android:fontFamily="sans-serif-black"
+        android:text="@string/profile_name"
         android:textAlignment="center"
         android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -24,54 +22,65 @@
         android:id="@+id/iv_picture_service"
         android:layout_width="213dp"
         android:layout_height="186dp"
+        android:layout_marginTop="16dp"
         app:srcCompat="@drawable/profile_picture"
-        tools:layout_editor_absoluteX="99dp"
-        tools:layout_editor_absoluteY="128dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_service_name" />
 
     <TextView
         android:id="@+id/tv_sport"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
         android:fontFamily="sans-serif-black"
         android:text="@string/sport"
         android:textSize="22sp"
-        tools:layout_editor_absoluteX="52dp"
-        tools:layout_editor_absoluteY="350dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_picture_service" />
 
     <TextView
         android:id="@+id/tv_country_city"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:fontFamily="sans-serif-black"
         android:text="@string/country_city"
         android:textSize="22sp"
-        tools:layout_editor_absoluteX="52dp"
-        tools:layout_editor_absoluteY="380dp" />
+        app:layout_constraintStart_toStartOf="@+id/tv_sport"
+        app:layout_constraintTop_toBottomOf="@+id/tv_sport" />
 
     <TextView
         android:id="@+id/tv_price"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:text="@string/price"
         android:textSize="18sp"
-        tools:layout_editor_absoluteX="52dp"
-        tools:layout_editor_absoluteY="410dp" />
+        app:layout_constraintStart_toStartOf="@+id/tv_country_city"
+        app:layout_constraintTop_toBottomOf="@+id/tv_country_city" />
 
     <TextView
         android:id="@+id/tv_info"
-        android:layout_width="324dp"
-        android:layout_height="84dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
         android:text="@string/profile_info"
-        tools:layout_editor_absoluteX="52dp"
-        tools:layout_editor_absoluteY="456dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tv_price"
+        app:layout_constraintTop_toBottomOf="@+id/tv_price" />
 
     <TextView
         android:id="@+id/tv_info2"
-        android:layout_width="324dp"
-        android:layout_height="84dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:text="@string/profile_info"
-        tools:layout_editor_absoluteX="52dp"
-        tools:layout_editor_absoluteY="557dp" />
+        app:layout_constraintEnd_toEndOf="@+id/tv_info"
+        app:layout_constraintStart_toStartOf="@+id/tv_info"
+        app:layout_constraintTop_toBottomOf="@+id/tv_info" />
 
     <ImageView
         android:id="@+id/iv_message"
@@ -104,7 +113,9 @@
         android:text="@string/message"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="130dp" />
+        app:layout_constraintStart_toEndOf="@+id/iv_message"
+        app:layout_constraintTop_toTopOf="@+id/iv_message"
+        app:layout_constraintBottom_toTopOf="@+id/iv_message"/>
 
     <TextView
         android:id="@+id/tv_call"
@@ -115,6 +126,9 @@
         android:fontFamily="sans-serif-black"
         android:text="@string/call"
         android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintStart_toEndOf="@+id/iv_call"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/iv_call"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_call" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

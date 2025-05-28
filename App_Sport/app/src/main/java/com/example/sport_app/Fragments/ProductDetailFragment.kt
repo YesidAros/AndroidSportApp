@@ -29,20 +29,17 @@ class ProductDetailFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        //Verify if the fragment arguments are not null
-        if (arguments != null){
-            //starting Android 13 (Api33) getParcelable() should be used.
+        if (arguments != null) {
             product = if (android.os.Build.VERSION.SDK_INT >= 33) {
                 arguments?.getParcelable(ARG_PRODUCT, Product::class.java)
-                    ?: Product(0, "Not Name", "Not Description", 0.0, R.drawable.profile_picture) // <--- CORREGIDO
-            } else { // <--- CORREGIDO: "else" en la misma línea o con indentación correcta
+                    ?: Product(0, "Not Name", "Not Description", 0.0, R.drawable.profile_picture, "Default Category") // <--- ADD DEFAULT VALUE
+            } else {
                 @Suppress("DEPRECATION")
-                arguments?.getParcelable<Product>(ARG_PRODUCT) // <--- CORREGIDO: Añadir tipo genérico
-                    ?: Product(0, "Not Name", "Not Description", 0.0, R.drawable.profile_picture) // <--- CORREGIDO
+                arguments?.getParcelable<Product>(ARG_PRODUCT)
+                    ?: Product(0, "Not Name", "Not Description", 0.0, R.drawable.profile_picture, "Default Category") // <--- ADD DEFAULT VALUE
             }
         } else {
-            //If there no arguments, set an empty product
-            product = Product(0, "Not Name", "Not Description", 0.0, R.drawable.profile_picture) // <--- CORREGIDO
+            product = Product(0, "Not Name", "Not Description", 0.0, R.drawable.profile_picture, "Default Category") // <--- ADD DEFAULT VALUE
         }
     }
 

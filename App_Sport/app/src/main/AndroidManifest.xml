@@ -37,7 +37,7 @@
             android:exported="false" />
         <activity android:name=".Activities.SingUpActivity"
             android:exported="false" />
-        <activity android:name=".Activities.ResultsActivity"
+        <activity android:name=".Activities.ResultsFragmentActivity"
             android:exported="false" />
         <activity android:name=".Fragments.ProductDetailFragment"
             android:exported="false" />

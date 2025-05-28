@@ -11,7 +11,6 @@ import com.example.sport_app.data.AppDatabase
 import com.example.sport_app.data.User
 import com.example.sport_app.data.local.Sport
 // Make sure to import your Fragment_Search
-import com.example.sport_app.Activities.ResultsActivity
 import kotlinx.coroutines.launch
 
 class MainActivity : AppCompatActivity() {
@@ -35,7 +34,7 @@ class MainActivity : AppCompatActivity() {
             val user = User(email = "elkin@example.com", password = "1234")
             db.userDao().insertUser(user)
 
-            // Consulting user by email
+            // Consulting user by email@
             val fetchedUser = db.userDao().getUserByEmail("elkin@example.com")
             Log.d("ROOM_TEST", "User: $fetchedUser")
 
