@@ -97,7 +97,7 @@
         android:id="@+id/bt_sing_in"
         android:layout_width="331dp"
         android:layout_height="56dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="76dp"
         android:backgroundTint="@color/medium_blue"
         android:text="@string/Sing_In"
         android:textSize="20sp"
@@ -111,16 +111,17 @@
         android:id="@+id/bt_google"
         android:layout_width="331dp"
         android:layout_height="56dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:backgroundTint="@color/white"
         android:text="@string/sing_in_with_google"
-        app:icon="@drawable/google"
-        app:iconSize="30dp"
-        app:iconTint="@null"
         android:textColor="@color/black"
         android:textSize="20sp"
         app:cornerRadius="10dp"
+        app:icon="@drawable/google"
+        app:iconSize="30dp"
+        app:iconTint="@null"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/bt_sing_in"
         app:strokeColor="@color/black"
@@ -128,7 +129,7 @@
         tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/forgot_password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-medium"
@@ -138,20 +139,20 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.857"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.672" />
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
+        app:layout_constraintVertical_bias="0.036" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/Sign_Up"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="32dp"
+        android:layout_marginBottom="28dp"
         android:fontFamily="sans-serif-black"
         android:text="@string/Sing_up"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.882"
+        app:layout_constraintHorizontal_bias="0.919"
         app:layout_constraintStart_toStartOf="parent" />
 
 
