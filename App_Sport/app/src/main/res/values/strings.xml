@@ -35,4 +35,6 @@
     <string name="barranquilla">Barranquilla</string>
     <string name="locations">Locations</string>
     <string name="tunja">Tunja</string>
+    <string name="take_picture">Take Picture</string>
+    <string name="open_gallery">Open Gallery</string>
 </resources>

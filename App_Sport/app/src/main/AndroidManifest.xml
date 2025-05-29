@@ -5,6 +5,16 @@
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
 
+    <!-- Permisos de Camara -->
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature
+        android:name="android.permission.CAMERA"
+        android:required="false"/>
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -15,6 +25,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Sport_App"
         tools:targetApi="31">
+        
+        <provider
+            android:authorities="${applicationId}.fileprovider"
+            android:name="androidx.core.content.FileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/files_paths" />
+        </provider>
+        
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
             android:value="ca-app-pub-5394926491466888~6436490764"/>
@@ -33,12 +54,14 @@
             android:exported="false" />
         <activity android:name=".Activities.LoginActivity"
             android:exported="false" />
-        <activity android:name=".Activities.SingUpActivity"
+        <activity android:name=".Activities.SignUpActivity"
             android:exported="false" />
         <activity android:name=".Activities.ResultsActivity"
             android:exported="false" />
         <activity android:name=".Activities.MapActivity"
             android:exported="false" />
+        <activity android:name=".Activities.CameraActivity"
+            android:exported="false"/>
     </application>
 
 </manifest>

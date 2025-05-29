@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <ImageView
+        android:id="@+id/iv_camera"
+        android:layout_width="374dp"
+        android:layout_height="623dp"
+        android:background="@color/medium_gray"
+        android:contentDescription="@string/take_picture"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_TakePhoto"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="36dp"
+        android:backgroundTint="@color/medium_blue"
+        android:text="@string/take_picture"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_camera" />
+
+    <Button
+        android:id="@+id/btn_OpenGalerry"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="36dp"
+        android:backgroundTint="@color/medium_blue"
+        android:text="@string/open_gallery"
+        app:layout_constraintStart_toEndOf="@+id/btn_TakePhoto"
+        app:layout_constraintTop_toBottomOf="@+id/iv_camera"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
